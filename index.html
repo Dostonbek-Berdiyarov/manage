@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAILWIND CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .hamburger {
+        background-image: url("./img/hamburger.svg");
+      }
+      .cross {
+        background-image: url("./img/cross.svg");
+      }
+
+      .leftpos {
+        left: calc(50% - 162.5px);
+      }
+      .link {
+        background-color: #f3603c;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+      .link:hover {
+        background-color: #f98f75;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section
+        class="hero pb-[100px] bg-no-repeat"
+        style="
+          background-image: url('./img/oval.png');
+          background-position: 835px -200px;
+        "
+      >
+        <header class="pt-[41px] pb-[48px] lg:pt-[56px] lg:pb-[120px]">
+          <div class="container max-w-6xl mx-auto px-6 lg:px-[21px]">
+            <div class="lg:flex items-center gap-x-[210px]">
+              <div class="flex justify-between relative">
+                <a
+                  class="w-[109px] h-[18px] md:w-[120px] md:h-[20px] lg:w-[146px] lg:h-[24px]"
+                  href="./index.html"
+                >
+                  <img src="./img/logo.svg" alt="manage logo" />
+                </a>
+                <button
+                  id="hamburger"
+                  class="w-[25px] h-[18px] hamburger bg-no-repeat bg-contain lg:hidden"
+                ></button>
+              </div>
+              <div
+                id="navigation"
+                class="hidden lg:flex items-center justify-between grow"
+              >
+                <nav
+                  class="absolute lg:static top-[105px] leftpos w-[325px] lg:w-[100%] max-w-[398px] bg-white"
+                >
+                  <ul
+                    class="flex flex-col lg:flex-row items-center gap-y-6 gap-x-8 py-10 lg:py-0"
+                  >
+                    <li class="font-bold">
+                      <a
+                        class="lg:text-[13px] hover:opacity-50 transition-opacity"
+                        style="color: #242d52; letter-spacing: -0.286px"
+                        href="#"
+                        >Pricing</a
+                      >
+                    </li>
+                    <li class="font-bold">
+                      <a
+                        class="lg:text-[13px] hover:opacity-50 transition-opacity"
+                        style="color: #242d52; letter-spacing: -0.286px"
+                        href="#"
+                        >Product</a
+                      >
+                    </li>
+                    <li class="font-bold">
+                      <a
+                        class="lg:text-[13px] hover:opacity-50 transition-opacity"
+                        style="color: #242d52; letter-spacing: -0.286px"
+                        href="#"
+                        >About Us</a
+                      >
+                    </li>
+                    <li class="font-bold">
+                      <a
+                        class="lg:text-[13px] hover:opacity-50 transition-opacity"
+                        style="color: #242d52; letter-spacing: -0.286px"
+                        href="#"
+                        >Careers</a
+                      >
+                    </li>
+                    <li class="font-bold">
+                      <a
+                        class="lg:text-[13px] hover:opacity-50 transition-opacity"
+                        style="color: #242d52; letter-spacing: -0.286px"
+                        href="#"
+                        >Community</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <a
+                  class="hidden lg:block pt-3 px-8 pb-[13px] font-bold rounded-3xl link transition-colors"
+                  style="color: #fcf6f5; font-size: 13px"
+                  href="#"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container max-w-6xl mx-auto px-6 lg:px-[21px]">
+          <div
+            class="flex flex-col md:flex-row-reverse md:justify-between items-center gap-y-[19px]"
+          >
+            <img
+              class="w-[318px] sm:w-[400px] lg:w-[540px]"
+              src="./img/herogroup.png"
+              alt="information"
+            />
+            <div
+              class="flex flex-col items-center md:items-start max-w-[309px] md:max-w-[400px] lg;max-w-[445px]"
+            >
+              <h1
+                class="mb-[9px] text-center md:text-start"
+                style="
+                  font-size: 40px;
+                  line-height: 50px;
+                  letter-spacing: -1px;
+                  color: #242d52;
+                "
+              >
+                Bring everyone together to build better products.
+              </h1>
+              <p
+                class="mb-[29px] font-light leading-[28px] text-center opacity-50 md:text-start"
+                style="color: #242d52"
+              >
+                Manage makes it simple for software teams to plan day-to-day
+                tasks while keeping the larger team goals in view.
+              </p>
+              <a
+                class="inline-block pt-3 px-8 pb-[13px] font-bold rounded-3xl link transition-colors"
+                style="color: #fcf6f5; font-size: 13px"
+                href="#"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
